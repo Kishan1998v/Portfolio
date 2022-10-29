@@ -1,0 +1,46 @@
+*{
+    
+    margin: 0;;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font: normal 16px sans-serif;
+}
+#Details{
+    background: none;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;;
+}
+#profileBackground{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-position: center;
+    background-attachment:scroll;
+    z-index: -1;
+    background-color: black;
+    opacity: 0;
+    animation: fadeback 1s ease-in-out 1s forwards ;
+}
+#profiledetails{
+    color: aliceblue;
+    display: flex;
+    height: 85vh;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+@keyframes fadeback {
+    100%{
+        opacity: 1;
+    }
+}
